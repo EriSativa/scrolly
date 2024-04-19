@@ -82,7 +82,7 @@ import LoremIpsum from './LoremIpsum.svelte'
 	:global(body) {
     background-color: white; 
 		color: black;
-		font-family: 'Montserrat', sans-serif; 
+		font-family: 'Garamond', sans-serif; 
   }
 	
 	*{
