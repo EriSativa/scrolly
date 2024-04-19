@@ -1,7 +1,7 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
 
-	import LoremIpsum from './LoremIpsum.svelte'
+import LoremIpsum from './LoremIpsum.svelte'
 
 	import Introduction from './Introduction.svelte'
 
@@ -13,15 +13,15 @@
 // le texte des boites
 	
   let stepsData = [
-    { "text": "<mark style='background-color: #ff8c00; color:white; padding: 2px; border-radius: 5px;'><strong>Dead Ball Era (1901-1920)</strong></mark>  Les règles et les stratégies mises en place ne favorisent pas les batteurs. Les stades sont caverneux et il est presque impossible de frapper un homerun dans beaucoup dentre eux." },
-    { "text": "<mark style='background-color: #ffd700; color:white; padding: 2px; border-radius: 5px;'><strong>Live Ball Era (1920-1941)</strong></mark> Les règles changent et les joueurs adoptent un nouveau style de frappe qui donne plus de puissance. Lattaque reprends le dessus et les homeruns commencent à prendre de limportance." },
-    { "text": "<mark style='background-color: #9400d3; color:white; padding: 2px; border-radius: 5px;'><strong> Integration, Expansion & Free Agency Era (1942-1993)</strong></mark>  Le baseball évolue à vitesse grand V : les afro-américains peuvent jouer, de nouvelles franchises apparaissent. Les homeruns continuent de saccumuler. " },
-		{ "text": "<mark style='background-color: #32cd32; color:white; padding: 2px; border-radius: 5px;'><strong> Steroid Era (1994-2005)</strong></mark>  Les compteurs explosent, Barry Bonds établit un nouveau record en 2001. La plupart des cogneurs de cette époque seront impliqués plus tard dans des scandales de dopage. " },
-		{ "text": "<mark style='background-color: #cd5c5c; color:white; padding: 2px; border-radius: 5px;'><strong>Modern Era (2006-&)</strong></mark>  Plus que jamais les équipes misent sur les homeruns pour produire de lattaque. A la fin des années 2010, la ligue est accusée à de nombreuses reprises de fabriquer des balles qui volent mieux afin de favoriser encore plus lattaque." },
+    { "text": "<mark style='background-color: #ff8c00; color:white; padding: 2px; border-radius: 5px;'><strong>Dead Ball Era (1901-1920)</strong></mark>  Les rÃ¨gles et les stratÃ©gies mises en place ne favorisent pas les batteurs. Les stades sont caverneux et il est presque impossible de frapper un homerun dans beaucoup dentre eux." },
+    { "text": "<mark style='background-color: #ffd700; color:white; padding: 2px; border-radius: 5px;'><strong>Live Ball Era (1920-1941)</strong></mark> Les rÃ¨gles changent et les joueurs adoptent un nouveau style de frappe qui donne plus de puissance. Lattaque reprends le dessus et les homeruns commencent Ã  prendre de limportance." },
+    { "text": "<mark style='background-color: #9400d3; color:white; padding: 2px; border-radius: 5px;'><strong> Integration, Expansion & Free Agency Era (1942-1993)</strong></mark>  Le baseball Ã©volue Ã  vitesse grand V : les afro-amÃ©ricains peuvent jouer, de nouvelles franchises apparaissent. Les homeruns continuent de saccumuler. " },
+		{ "text": "<mark style='background-color: #32cd32; color:white; padding: 2px; border-radius: 5px;'><strong> Steroid Era (1994-2005)</strong></mark>  Les compteurs explosent, Barry Bonds Ã©tablit un nouveau record en 2001. La plupart des cogneurs de cette Ã©poque seront impliquÃ©s plus tard dans des scandales de dopage. " },
+		{ "text": "<mark style='background-color: #cd5c5c; color:white; padding: 2px; border-radius: 5px;'><strong>Modern Era (2006-&)</strong></mark>  Plus que jamais les Ã©quipes misent sur les homeruns pour produire de lattaque. A la fin des annÃ©es 2010, la ligue est accusÃ©e Ã  de nombreuses reprises de fabriquer des balles qui volent mieux afin de favoriser encore plus lattaque." },
   ];
 
-	// Le "moteur" du scrollytelling qui utilise l'Intersection Observer API (en gros, le code observe ce qu'il y a à l'écran)
-	// ça on ne touche pas sinon tout se casse !
+	// Le "moteur" du scrollytelling qui utilise l'Intersection Observer API (en gros, le code observe ce qu'il y a Ã  l'Ã©cran)
+	// Ã§a on ne touche pas sinon tout se casse !
 
   onMount(() => {
     observer = new IntersectionObserver((entries) => {
@@ -43,7 +43,7 @@
   });
 </script>
 
-<h1>De 1901 à aujourd'hui : l'évolution du homerun, coup le plus iconique du baseball</h1>
+<h1>De 1901 Ã  aujourd'hui : l'Ã©volution du homerun, coup le plus iconique du baseball</h1>
 
 <Introduction/>
 
@@ -75,9 +75,9 @@
 <style>
 
 	/* Ici les valeurs pour l'ensemble de la page > 
-	peut nécessiter des modifs de couleurs dans Flourish 
+	peut nÃ©cessiter des modifs de couleurs dans Flourish 
 	pour s'assurer que le graphe soit tjs bien visible (titre de graphique noir sur
-	fond de page noir,ça ne se voit pas bien...*/
+	fond de page noir,Ã§a ne se voit pas bien...*/
 
 	:global(body) {
     background-color: white; 
@@ -142,7 +142,7 @@
     margin: auto;
   }
 
-	/* Pour adapter la vue en mobile: steps centrées par dessus le graphique */
+	/* Pour adapter la vue en mobile: steps centrÃ©es par dessus le graphique */
 
   @media screen and (max-width: 768px) {
     .section-container {
